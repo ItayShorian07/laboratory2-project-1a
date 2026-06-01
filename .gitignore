@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+
+# Public scenarios are kept locally because some files exceed GitHub's limit.
+data/
+
+# Machine-specific benchmark cache.
+.baseline_local.json
+
