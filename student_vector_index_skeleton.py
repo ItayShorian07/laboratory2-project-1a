@@ -11,8 +11,8 @@ class VectorIndex:
     - insert: succeeds iff ID does not exist; duplicate IDs in one batch must not occur in data.
     - delete: succeeds iff ID exists; non-existing IDs must not crash.
     - search: return shape (num_queries, min(k, n_active)); IDs sorted by descending dot product.
-    - Each of insert/delete/search must be at most 20 physical lines (autograder-enforced).
-  """
+    - No line-count limit is enforced; keep the implementation clean and modular.
+    """
 
     def __init__(self, dim: int):
         self.dim = int(dim)
